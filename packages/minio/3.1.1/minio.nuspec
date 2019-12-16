@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Minio</id>
+    <version>3.1.1</version>
+    <authors>Minio, Inc.</authors>
+    <owners>Minio, Inc.</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/minio/minio-dotnet</projectUrl>
+    <iconUrl>https://min.io/resources/img/logo/MINIO_Bird.png</iconUrl>
+    <description>Minio .NET SDK for Amazon S3 Compatible Cloud Storage.</description>
+    <releaseNotes>https://github.com/minio/minio-dotnet/releases</releaseNotes>
+    <copyright>Copyright (c) 2018.  All rights reserved.</copyright>
+    <tags>minio cloud storage</tags>
+    <repository type="git" url="https://github.com/minio/minio-dotnet" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="RestSharp" version="106.3.1" exclude="Build,Analyzers" />
+        <dependency id="System.Reactive.Linq" version="4.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.CSharp" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="RestSharp" version="106.3.1" exclude="Build,Analyzers" />
+        <dependency id="System.Reactive.Linq" version="4.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.6" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

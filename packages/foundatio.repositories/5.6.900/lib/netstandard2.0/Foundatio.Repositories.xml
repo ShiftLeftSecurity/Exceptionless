@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Foundatio.Repositories</name>
+    </assembly>
+    <members>
+        <member name="P:Foundatio.Repositories.Models.IIdentity.Id">
+            <summary>
+            Unique id that identifies a document.
+            </summary>
+        </member>
+        <member name="P:Foundatio.Repositories.Models.IVersioned.Version">
+            <summary>
+            Current modification version for the document.
+            </summary>
+        </member>
+        <member name="M:Foundatio.Repositories.Extensions.EnumerableExtensions.ToHex(System.Collections.Generic.IEnumerable{System.Byte})">
+            <summary>
+            Converts a byte array to Hexadecimal.
+            </summary>
+            <param name="bytes">The bytes to convert.</param>
+            <returns>Hexadecimal string of the byte array.</returns>
+        </member>
+        <member name="M:Foundatio.Repositories.ISearchableReadOnlyRepository`1.CountBySearchAsync(Foundatio.Repositories.ISystemFilter,System.String,System.String,Foundatio.Repositories.ICommandOptions)">
+            <summary>
+            Gets a document count and optional aggregation data using search criteria
+            </summary>
+            <param name="systemFilter">A object containing filter criteria used to enforce any tennancy or other system level filters</param>
+            <param name="filter">Used to filter the documents (defaults to AND and does not score)</param>
+            <param name="aggregations">Aggregation expression used to return aggregated data within any given filters</param>
+            <param name="options">Command options used to control things like paging, caching, etc</param>
+            <returns></returns>
+        </member>
+        <member name="M:Foundatio.Repositories.ISearchableReadOnlyRepository`1.SearchAsync(Foundatio.Repositories.ISystemFilter,System.String,System.String,System.String,System.String,Foundatio.Repositories.ICommandOptions)">
+            <summary>
+            Find documents using search criteria
+            </summary>
+            <param name="systemFilter">A object containing filter criteria used to enforce any tennancy or other system level filters</param>
+            <param name="filter">Used to filter the documents (defaults to AND and does not score)</param>
+            <param name="criteria">Search criteria to find documents and score the results within any given filters (defaults to OR)</param>
+            <param name="sort">How to sort the results. Must be null if you want the results ordered by score</param>
+            <param name="aggregations">Aggregation expression used to return aggregated data within any given filters</param>
+            <param name="options">Command options used to control things like paging, caching, etc</param>
+            <returns></returns>
+        </member>
+        <member name="P:Foundatio.Repositories.Migrations.IMigration.Version">
+            <summary>
+            The version of the migration. Determines the order in which migrations are run. If no version is set, then the migration will not be run automatically.
+            </summary>
+        </member>
+        <member name="T:Foundatio.Repositories.ICommandOptions">
+            <summary>
+            Options that control the behavior of the repositories
+            </summary>
+        </member>
+        <member name="T:Foundatio.Repositories.Queries.IQueryOptions">
+            <summary>
+            Marker interface to make sure that query options are
+            </summary>
+        </member>
+        <member name="T:Foundatio.Repositories.IRepositoryQuery">
+            <summary>
+            Query options that control the result of the repository query operations
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Exceptionless.DateTimeExtensions</id>
+    <version>3.3.96</version>
+    <authors>bniemyjski,ejsmith</authors>
+    <owners>bniemyjski,ejsmith</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/exceptionless/Exceptionless.DateTimeExtensions</projectUrl>
+    <iconUrl>https://be.exceptionless.io/img/exceptionless-32.png</iconUrl>
+    <description>DateTimeRange and various DateTime and TimeSpan extension methods.</description>
+    <releaseNotes>https://github.com/exceptionless/Exceptionless.DateTimeExtensions/releases</releaseNotes>
+    <copyright>Copyright (c) 2017 Exceptionless.  All rights reserved.</copyright>
+    <repository type="git" url="https://github.com/exceptionless/Exceptionless.DateTimeExtensions" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

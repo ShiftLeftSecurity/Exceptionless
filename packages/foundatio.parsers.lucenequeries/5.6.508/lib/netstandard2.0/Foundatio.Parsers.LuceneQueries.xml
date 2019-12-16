@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Foundatio.Parsers.LuceneQueries</name>
+    </assembly>
+    <members>
+        <member name="T:Foundatio.Parsers.LuceneQueries.LuceneQueryParser">
+            <summary>
+             Parses a string according to the rules of the <see cref="T:Foundatio.Parsers.LuceneQueries.LuceneQueryParser" /> grammar.
+            </summary>
+        </member>
+        <member name="M:Foundatio.Parsers.LuceneQueries.LuceneQueryParser.Parse(System.String,System.String)">
+            <summary>
+             Parses a string according to the rules of the <see cref="T:Foundatio.Parsers.LuceneQueries.LuceneQueryParser" /> grammar.
+            </summary>
+            <param name="subject">The parsing subject.</param>
+            <param name="fileName">The optional file name to use in error messages.</param>
+            <returns>The <see cref="T:Foundatio.Parsers.LuceneQueries.Nodes.GroupNode" /> parsed from <paramref name="subject" />.</returns>
+            <exception cref="T:System.FormatException">
+             Thrown when parsing fails against <paramref name="subject"/>.  The exception's <code>Data["cursor"]</code> will be set with the cursor where the fatal error occurred.
+            </exception>
+        </member>
+        <member name="M:Foundatio.Parsers.LuceneQueries.LuceneQueryParser.Parse(System.String,System.String,System.Collections.Generic.IList{Pegasus.Common.LexicalElement}@)">
+            <summary>
+             Parses a string according to the rules of the <see cref="T:Foundatio.Parsers.LuceneQueries.LuceneQueryParser" /> grammar.
+            </summary>
+            <param name="subject">The parsing subject.</param>
+            <param name="fileName">The optional file name to use in error messages.</param>
+            <param name="lexicalElements">When this method returns, contains the lexical elements for the parsing subject. This parameter is passed uninitialized.</param>
+            <returns>The <see cref="T:Foundatio.Parsers.LuceneQueries.Nodes.GroupNode" /> parsed from <paramref name="subject" />.</returns>
+            <exception cref="T:System.FormatException">
+             Thrown when parsing fails against <paramref name="subject"/>.  The exception's <code>Data["cursor"]</code> will be set with the cursor where the fatal error occurred.
+            </exception>
+        </member>
+    </members>
+</doc>

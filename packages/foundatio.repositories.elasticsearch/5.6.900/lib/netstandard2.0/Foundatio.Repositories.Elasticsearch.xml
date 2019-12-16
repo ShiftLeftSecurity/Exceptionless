@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Foundatio.Repositories.Elasticsearch</name>
+    </assembly>
+    <members>
+        <member name="P:Foundatio.Repositories.Elasticsearch.Configuration.DailyIndex.MaxIndexAge">
+            <summary>
+            This should never be be negative or less than the index time period (day or a month)
+            </summary>
+        </member>
+        <member name="M:Foundatio.Repositories.Elasticsearch.Configuration.IIndexType`1.CreateDocumentId(`0)">
+            <summary>
+            Creates a new document id. If a date can be resolved, it will be taken into account when creating a new id.
+            </summary>
+        </member>
+        <member name="M:Foundatio.Repositories.Elasticsearch.Configuration.IIndexType`1.GetFieldName(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+            <summary>
+            Used for sorting
+            </summary>
+        </member>
+        <member name="M:Foundatio.Repositories.Elasticsearch.Configuration.IIndexType`1.GetPropertyName(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+            <summary>
+            Used for everything not sorting
+            </summary>
+        </member>
+        <member name="M:Foundatio.Repositories.Elasticsearch.Configuration.IndexBase.GetTimeStampField">
+            <summary>
+            Attempt to get the document modified date for reindexing.
+            NOTE: We make the assumption that all types implement the same date interfaces.
+            </summary>
+        </member>
+        <member name="M:Foundatio.Repositories.Elasticsearch.Configuration.VersionedIndex.GetCurrentVersionAsync">
+            <summary>
+            Returns the current index version (E.G., the oldest index version).
+            </summary>
+            <returns>-1 if there are no indexes.</returns>
+        </member>
+        <member name="M:Foundatio.Repositories.Elasticsearch.Extensions.ElasticIndexExtensions.AddKeywordField``1(Nest.TextPropertyDescriptor{``0})">
+            <summary>
+            Not chainable with AddSortField. Use AddKeywordAndSortFields to add both.
+            </summary>
+        </member>
+        <member name="M:Foundatio.Repositories.Elasticsearch.Extensions.ElasticIndexExtensions.AddSortField``1(Nest.TextPropertyDescriptor{``0},System.String)">
+            <summary>
+            Not chainable with AddKeywordField. Use AddKeywordAndSortFields to add both.
+            </summary>
+        </member>
+        <member name="M:Foundatio.Repositories.QueryExpressionsExtensions.FilterExpression``1(``0,System.String)">
+            <summary>
+            Default Search operator is AND. Does boolean matching and no scoring will occur.
+            </summary>
+        </member>
+        <member name="M:Foundatio.Repositories.QueryExpressionsExtensions.SearchExpression``1(``0,System.String,Foundatio.Repositories.SearchOperator)">
+            <summary>
+            Default Search operator is OR and scoring will occur.
+            </summary>
+        </member>
+    </members>
+</doc>

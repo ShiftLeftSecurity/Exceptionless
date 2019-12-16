@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>AWSSDK.Core</id>
+    <version>3.3.103.31</version>
+    <title>AWSSDK - Core Runtime</title>
+    <authors>Amazon Web Services</authors>
+    <owners>Amazon Web Services</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://aws.amazon.com/apache2.0/</licenseUrl>
+    <projectUrl>https://github.com/aws/aws-sdk-net/</projectUrl>
+    <iconUrl>https://sdk-for-net.amazonwebservices.com/images/AWSLogo128x128.png</iconUrl>
+    <description>The Amazon Web Services SDK for .NET - Core Runtime</description>
+    <language>en-US</language>
+    <tags>AWS Amazon cloud aws-sdk-v3</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework3.5" />
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETPortable0.0-Profile259">
+        <dependency id="Microsoft.Net.Http" version="2.2.29" />
+        <dependency id="PCLStorage" version="1.0.2" />
+        <dependency id="PCLCrypto" version="1.0.2.15130" />
+      </group>
+      <group targetFramework="MonoAndroid1.0">
+        <dependency id="PCLStorage" version="1.0.2" />
+        <dependency id="PCLCrypto" version="1.0.2.15130" />
+      </group>
+      <group targetFramework="Xamarin.iOS1.0">
+        <dependency id="PCLStorage" version="1.0.2" />
+        <dependency id="PCLCrypto" version="1.0.2.15130" />
+      </group>
+      <group targetFramework="MonoTouch1.0">
+        <dependency id="PCLStorage" version="1.0.2" />
+        <dependency id="PCLCrypto" version="1.0.2.15130" />
+      </group>
+      <group targetFramework="UAP0.0">
+        <dependency id="Microsoft.NETCore.UniversalWindowsPlatform" version="5.2.2" />
+        <dependency id="PCLStorage" version="1.0.2" />
+        <dependency id="PCLCrypto" version="1.0.2.15130" />
+      </group>
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="System.Net.Requests" version="4.0.11" />
+        <dependency id="System.Reflection.TypeExtensions" version="4.1.0" />
+        <dependency id="System.Security.Cryptography.Csp" version="4.0.0" />
+        <dependency id="System.Threading.Thread" version="4.0.0" />
+        <dependency id="Microsoft.CSharp" version="4.0.1" />
+      </group>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

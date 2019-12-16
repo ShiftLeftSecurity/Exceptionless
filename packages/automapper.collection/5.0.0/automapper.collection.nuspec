@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>AutoMapper.Collection</id>
+    <version>5.0.0</version>
+    <authors>Tyler Carlson</authors>
+    <owners>Tyler Carlson</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/AutoMapper/AutoMapper.Collection/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/AutoMapper/Automapper.Collection</projectUrl>
+    <iconUrl>https://s3.amazonaws.com/automapper/icon.png</iconUrl>
+    <description>Collection Add/Remove/Update support for AutoMapper. AutoMapper.Collection adds EqualityComparison Expressions for TypeMaps to determine if Source and Destination type are equivalent to each other when mapping collections.</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="AutoMapper" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="AutoMapper" version="8.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

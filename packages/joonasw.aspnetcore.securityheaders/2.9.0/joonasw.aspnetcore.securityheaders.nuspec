@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Joonasw.AspNetCore.SecurityHeaders</id>
+    <version>2.9.0</version>
+    <title>Joonasw.AspNetCore.SecurityHeaders</title>
+    <authors>Joonas Westlin</authors>
+    <owners>Joonas Westlin</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <projectUrl>https://github.com/juunas11/aspnetcore-security-headers</projectUrl>
+    <description>Middleware for adding security headers to an ASP.NET Core application. Allows you to easily add Content Security Policy, Strict Transport Security, and Public Key Pins to an app.</description>
+    <releaseNotes>Added support for require-sri-for CSP directive.</releaseNotes>
+    <copyright>Copyright 2019 Joonas Westlin</copyright>
+    <tags>aspnetcore security headers hsts hpkp csp</tags>
+    <repository type="git" url="https://github.com/juunas11/aspnetcore-security-headers" commit="00bef4481d77b4890e78d4dfdc0400571dc1a8bc" />
+    <dependencies>
+      <group targetFramework=".NETStandard1.5">
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Razor.Runtime" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options" version="1.1.2" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.4.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Razor.Runtime" version="2.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.4.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

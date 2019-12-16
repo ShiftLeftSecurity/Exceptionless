@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.ApplicationInsights.AspNetCore</id>
+    <version>2.7.1</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://go.microsoft.com/fwlink/?LinkId=392727</projectUrl>
+    <iconUrl>https://appanacdn.blob.core.windows.net/cdn/icons/aic.png</iconUrl>
+    <description>Application Insights for ASP.NET Core web applications. See https://azure.microsoft.com/documentation/articles/app-insights-asp-net-five/ for more information. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Azure Monitoring Analytics ApplicationInsights Telemetry AppInsights aspnetcore</tags>
+    <repository type="git" url="https://github.com/Microsoft/ApplicationInsights-aspnetcore.git" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.1">
+        <dependency id="System.Diagnostics.DiagnosticSource" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.DependencyCollector" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.PerfCounterCollector" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.WindowsServer" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Hosting" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Encodings.Web" version="4.3.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="1.0.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="System.Diagnostics.DiagnosticSource" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.DependencyCollector" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.PerfCounterCollector" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.WindowsServer" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Hosting" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Encodings.Web" version="4.3.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="1.0.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.DiagnosticSource" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.DependencyCollector" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.PerfCounterCollector" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.WindowsServer" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Hosting" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Encodings.Web" version="4.3.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Abstractions" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="System.Net.NameResolution" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Diagnostics.DiagnosticSource" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.DependencyCollector" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.PerfCounterCollector" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.WindowsServer" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Hosting" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Encodings.Web" version="4.3.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="2.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.ApplicationInsights" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.NameResolution" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.5.1, .NETFramework4.6" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

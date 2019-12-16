@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>MaxMind.GeoIP2</id>
+    <version>3.0.0</version>
+    <authors>MaxMind.GeoIP2</authors>
+    <owners>MaxMind.GeoIP2</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/maxmind/GeoIP2-dotnet/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/maxmind/GeoIP2-dotnet</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/maxmind/GeoIP2-dotnet/master/MaxMind-logo.png</iconUrl>
+    <description>MaxMind GeoIP2 Database Reader and Web Service Client</description>
+    <tags>maxmind ip geoip geoip2 geolocation ipv4 ipv6</tags>
+    <repository type="git" url="https://github.com/maxmind/GeoIP2-dotnet" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="MaxMind.Db" version="2.4.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.CSharp" version="4.4.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.4">
+        <dependency id="MaxMind.Db" version="2.4.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.CSharp" version="4.4.1" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+        <dependency id="System.Collections" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Globalization" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Linq" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Linq.Expressions" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Http" version="4.3.3" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Requests" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Threading" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="MaxMind.Db" version="2.4.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.CSharp" version="4.4.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="11.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AsyncFixer</id>
+    <version>1.1.6</version>
+    <title>AsyncFixer</title>
+    <authors>Semih Okur</authors>
+    <owners>Semih Okur</owners>
+    <licenseUrl>http://learnasync.net/LICENSE.txt</licenseUrl>
+    <projectUrl>http://learnasync.net</projectUrl>
+    <iconUrl>http://learnasync.net/icon.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <developmentDependency>true</developmentDependency>
+    <description>Advanced Async/Await Diagnostics and CodeFixes for C#.</description>
+    <summary>AsyncFixer helps developers in finding and correcting common async/await misuses for C#.</summary>
+    <releaseNotes>See http://learnasync.net/CHANGELOG.txt</releaseNotes>
+    <copyright>Copyright (c) AsyncFixer 2015-2018</copyright>
+    <tags>asyncfixer, analyzers, async/await, asynchronous, diagnostics, codefix, roslyn, codeanalysis</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

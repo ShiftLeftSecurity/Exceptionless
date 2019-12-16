@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Foundatio.Jobs.Commands</name>
+    </assembly>
+    <members>
+        <member name="P:Foundatio.Jobs.Commands.JobConfiguration.Types">
+            <summary>
+            A list of job types to use. If this collection is populated, it will override Assemblies and Exclusions.
+            </summary>
+        </member>
+        <member name="P:Foundatio.Jobs.Commands.JobConfiguration.Assemblies">
+            <summary>
+            List of assemblies to inspect for types that implement IJob.
+            </summary>
+        </member>
+        <member name="P:Foundatio.Jobs.Commands.JobConfiguration.Exclusions">
+            <summary>
+            List of exclusion patterns that will be applied to the jobs discovered in the specified assemblies.
+            </summary>
+        </member>
+    </members>
+</doc>

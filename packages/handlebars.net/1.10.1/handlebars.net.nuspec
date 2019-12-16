@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Handlebars.Net</id>
+    <version>1.10.1</version>
+    <authors>Rex Morgan</authors>
+    <owners>Rex Morgan</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://opensource.org/licenses/mit</licenseUrl>
+    <projectUrl>https://github.com/rexm/Handlebars.Net</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/rexm/Handlebars.Net/master/hbnet-icon.png</iconUrl>
+    <description>Blistering-fast Handlebars.js templates in your .NET application.</description>
+    <releaseNotes>Added quad-stache syntax, better support for inline and partial blocks, various bug fixes</releaseNotes>
+    <copyright>Copyright © 2014-2019 Rex Morgan</copyright>
+    <tags>handlebars mustache templating engine compiler</tags>
+    <repository type="git" url="https://github.com/rexm/Handlebars.Net" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.2" />
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.CSharp" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.TypeExtensions" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.CSharp" version="4.4.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.TypeExtensions" version="4.4.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.5.2" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

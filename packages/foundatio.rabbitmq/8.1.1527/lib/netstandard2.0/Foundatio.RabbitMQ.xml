@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Foundatio.RabbitMQ</name>
+    </assembly>
+    <members>
+        <member name="M:Foundatio.Messaging.RabbitMQMessageBus.ConvertToMessageBusData(RabbitMQ.Client.Events.BasicDeliverEventArgs)">
+            <summary>
+            Get MessageBusData from a RabbitMQ delivery
+            </summary>
+            <param name="envelope">The RabbitMQ delivery arguments</param>
+            <returns>The MessageBusData for the message</returns>
+        </member>
+        <member name="M:Foundatio.Messaging.RabbitMQMessageBus.SerializeMessage(System.String,System.Object)">
+            <summary>
+            Serialize received message to RabbitMQ raw body
+            </summary>
+            <param name="messageType">type of message that should be provided</param>
+            <param name="message">message that should be serialized</param>
+            <returns>serialized representation of message</returns>
+        </member>
+        <member name="M:Foundatio.Messaging.RabbitMQMessageBus.PublishImplAsync(System.String,System.Object,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)">
+            <summary>
+            Publish the message
+            </summary>
+            <param name="messageType"></param>
+            <param name="message"></param>
+            <param name="delay">Along with the delay value, _delayExchange should also be set to true</param>
+            <param name="cancellationToken"></param>
+            <remarks>RabbitMQ has an upper limit of 2GB for messages.BasicPublish blocking AMQP operations.
+            The rule of thumb is: avoid sharing channels across threads.
+            Publishers in your application that publish from separate threads should use their own channels.
+            The same is a good idea for consumers.</remarks>
+        </member>
+        <member name="M:Foundatio.Messaging.RabbitMQMessageBus.CreateConnection">
+            <summary>
+            Connect to a broker - RabbitMQ
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Foundatio.Messaging.RabbitMQMessageBus.CreateDelayedExchange(RabbitMQ.Client.IModel)">
+            <summary>
+            Attempts to create the delayed exchange.
+            </summary>
+            <param name="model"></param>
+            <returns>true if the delayed exchange was successfully declared. Which means plugin was installed.</returns>
+        </member>
+        <member name="M:Foundatio.Messaging.RabbitMQMessageBus.CreateQueue(RabbitMQ.Client.IModel)">
+            <summary>
+            The client sends a message to an exchange and attaches a routing key to it.
+            The message is sent to all queues with the matching routing key. Each queue has a
+            receiver attached which will process the message. We’ll initiate a dedicated message
+            exchange and not use the default one. Note that a queue can be dedicated to one or more routing keys.
+            </summary>
+            <param name="model">channel</param>
+        </member>
+        <member name="P:Foundatio.Messaging.RabbitMQMessageBusOptions.ConnectionString">
+            <summary>
+            The connection string. See https://www.rabbitmq.com/uri-spec.html for more information.
+            </summary>
+        </member>
+        <member name="P:Foundatio.Messaging.RabbitMQMessageBusOptions.DefaultMessageTimeToLive">
+            <summary>
+            The default message time to live. The value of the expiration field describes the TTL period in milliseconds.
+            </summary>
+        </member>
+        <member name="P:Foundatio.Messaging.RabbitMQMessageBusOptions.Arguments">
+            <summary>
+            Arguments passed to QueueDeclare. Some brokers use it to implement additional features like message TTL.
+            </summary>
+        </member>
+        <member name="P:Foundatio.Messaging.RabbitMQMessageBusOptions.IsDurable">
+            <summary>
+            Durable (will survive a broker restart)
+            </summary>
+        </member>
+        <member name="P:Foundatio.Messaging.RabbitMQMessageBusOptions.IsSubscriptionQueueExclusive">
+            <summary>
+            Whether or not the subscription queue is exclusive to this message bus instance.
+            </summary>
+        </member>
+        <member name="P:Foundatio.Messaging.RabbitMQMessageBusOptions.SubscriptionQueueAutoDelete">
+            <summary>
+            Whether or not the subscription queue should be automatically deleted.
+            </summary>
+        </member>
+        <member name="P:Foundatio.Messaging.RabbitMQMessageBusOptions.SubscriptionQueueName">
+            <summary>
+            The name of the subscription queue this message bus instance will listen on.
+            </summary>
+        </member>
+        <member name="P:Foundatio.Messaging.RabbitMQMessageBusOptions.AcknowledgementStrategy">
+            <summary>
+            How messages should be acknowledged.
+            </summary>
+        </member>
+    </members>
+</doc>

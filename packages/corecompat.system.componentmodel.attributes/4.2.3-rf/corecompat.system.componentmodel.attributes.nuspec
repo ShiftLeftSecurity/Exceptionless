@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CoreCompat.System.ComponentModel.Attributes</id>
+    <version>4.2.3-rf</version>
+    <title>System.ComponentModel Attributes for .NET Core</title>
+    <authors>Mono</authors>
+    <owners>quamotion</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides an implementation of commonly used attributes in System.ComponentModel, based on Mono, for .NET Core</description>
+    <tags></tags>
+    <dependencies>
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="System.ComponentModel.Primitives" version="[4.1.0, )" />
+        <dependency id="System.Collections.Specialized" version="[4.0.1, )" />
+        <dependency id="System.ComponentModel.TypeConverter" version="[4.1.0, )" />
+        <dependency id="System.ComponentModel" version="[4.0.1, )" />
+        <dependency id="System.Collections.NonGeneric" version="[4.0.1, )" />
+        <dependency id="System.Reflection.TypeExtensions" version="[4.1.0, )" />
+        <dependency id="System.Diagnostics.Tools" version="[4.0.1, )" />
+        <dependency id="Microsoft.Win32.Registry" version="[4.0.0, )" />
+        <dependency id="System.Text.RegularExpressions" version="[4.1.0, )" />
+        <dependency id="System.Runtime.InteropServices" version="[4.1.0, )" />
+        <dependency id="System.Diagnostics.Debug" version="[4.0.11, )" />
+        <dependency id="System.Threading" version="[4.0.11, )" />
+        <dependency id="System.Runtime.Extensions" version="[4.1.0, )" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

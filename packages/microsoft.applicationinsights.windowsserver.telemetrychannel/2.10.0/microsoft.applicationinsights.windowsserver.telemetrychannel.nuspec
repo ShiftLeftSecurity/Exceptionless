@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel</id>
+    <version>2.10.0</version>
+    <title>Application Insights Telemetry Channel for Windows Server Applications</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://go.microsoft.com/fwlink/?LinkId=392727</projectUrl>
+    <iconUrl>http://appanacdn.blob.core.windows.net/cdn/icons/aic.png</iconUrl>
+    <description>This nuget provides a telemetry channel to Application Insights Windows Server SDK that will preserve telemetry in offline scenarios. This is a dependent package, for the best experience please install the platform specific package. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156</description>
+    <releaseNotes>For the release notes please follow http://go.microsoft.com/fwlink/?LinkId=535037</releaseNotes>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Analytics Azure ApplicationInsights Telemetry Monitoring SDK</tags>
+    <packageTypes>
+      <packageType name="Dependency" />
+    </packageTypes>
+    <repository type="Git" url="https://github.com/Microsoft/ApplicationInsights-dotnet" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Microsoft.ApplicationInsights" version="2.10.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="Microsoft.ApplicationInsights" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.Process" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.IO.FileSystem.AccessControl" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.NetworkInformation" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Requests" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.WebHeaderCollection" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.Cryptography.Algorithms" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Threading.Thread" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.ApplicationInsights" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.Process" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.IO.FileSystem.AccessControl" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.NetworkInformation" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Requests" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.WebHeaderCollection" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.Cryptography.Algorithms" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Threading.Thread" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Web" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

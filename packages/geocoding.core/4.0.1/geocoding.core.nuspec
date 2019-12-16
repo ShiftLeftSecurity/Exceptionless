@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Geocoding.Core</id>
+    <version>4.0.1</version>
+    <title>Geocoding.Net Core Library</title>
+    <authors>chadly</authors>
+    <owners>chadly</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/chadly/Geocoding.net/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/chadly/Geocoding.net</projectUrl>
+    <description>Includes a model and interface for communicating with four popular Geocoding providers. Current implementations include: Google Maps, Yahoo! PlaceFinder, Bing Maps (aka Virtual Earth), and Mapquest. The API returns latitude/longitude coordinates and normalized address information. This can be used to perform address validation, real time mapping of user-entered addresses, distance calculations, and much more.</description>
+    <releaseNotes>https://github.com/chadly/Geocoding.net/releases/latest</releaseNotes>
+    <copyright>Copyright © 2008 - 2017 Chad Lee</copyright>
+    <tags>geocoding geocode geocoder maps address validation normalization google-maps bing-maps yahoo-placefinder mapquest</tags>
+    <repository type="git" url="https://github.com/chadly/Geocoding.net.git" />
+    <dependencies>
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="9.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

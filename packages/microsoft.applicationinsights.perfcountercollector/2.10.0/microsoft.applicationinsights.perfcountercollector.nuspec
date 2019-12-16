@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.ApplicationInsights.PerfCounterCollector</id>
+    <version>2.10.0</version>
+    <title>Application Insights Performance Counters Collector</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://go.microsoft.com/fwlink/?LinkId=392727</projectUrl>
+    <iconUrl>http://appanacdn.blob.core.windows.net/cdn/icons/aic.png</iconUrl>
+    <description>Application Insights Performance Counters Collector allows you to send data collected by Performance Counters to Application Insights. Privacy statement: https://go.microsoft.com/fwlink/?LinkId=512156</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Azure Monitoring Analytics ApplicationInsights Telemetry ASP.NET ASMX Web Azure Server Services ASPX Websites Performance Counters Performance Collection</tags>
+    <packageTypes>
+      <packageType name="Dependency" />
+    </packageTypes>
+    <repository type="Git" url="https://github.com/Microsoft/ApplicationInsights-dotnet-server" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Microsoft.ApplicationInsights" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.DiagnosticSource" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="Microsoft.ApplicationInsights" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Caching.Memory" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.PlatformAbstractions" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Json" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Threading.Thread" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.ApplicationInsights" version="2.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Caching.Memory" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.PlatformAbstractions" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.PerformanceCounter" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Json" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Threading.Thread" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Runtime.Caching" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

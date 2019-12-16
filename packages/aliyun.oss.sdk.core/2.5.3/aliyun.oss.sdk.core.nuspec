@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>aliyun.oss.sdk.core</id>
+    <version>2.5.3</version>
+    <title>aliyun.oss.sdk.core 2.5.3</title>
+    <authors>hudou</authors>
+    <owners>hudou</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>aliyun.oss.sdk.core 2.5.3</description>
+    <tags>Aliyun.OSS netcore dotnetcore</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="NETStandard.Library" version="[1.6.0, )" />
+        <dependency id="System.ComponentModel.Primitives" version="[4.3.0, )" />
+        <dependency id="System.Net.Requests" version="[4.3.0, )" />
+        <dependency id="System.Runtime.Serialization.Formatters" version="[4.3.0, )" />
+        <dependency id="System.Xml.XmlSerializer" version="[4.3.0, )" />
+        <dependency id="System.Reflection.TypeExtensions" version="[4.3.0, )" />
+        <dependency id="System.Runtime" version="[4.3.0, )" />
+        <dependency id="System.Private.ServiceModel" version="[4.3.0, )" />
+        <dependency id="CoreCompat.System.ComponentModel.Attributes" version="[4.2.3-rf, )" />
+        <dependency id="System.Net.Security" version="[4.3.0, )" />
+        <dependency id="System.Threading.Thread" version="[4.3.0, )" />
+      </group>
+    </dependencies>
+    <summary>aliyun.oss.sdk.core 2.5.3</summary>
+  </metadata>
+</package>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>App.Metrics.AspNetCore.Abstractions</id>
+    <version>3.1.0</version>
+    <authors>Allan Hardy and Contributors</authors>
+    <owners>Allan Hardy and Contributors</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <projectUrl>https://app-metrics.io/</projectUrl>
+    <iconUrl>https://app-metrics.io/images/logo.png</iconUrl>
+    <description>App Metrics ASP.NET Core abstractions and interfaces for routing, HTTP response formatting and more.</description>
+    <copyright>Allan Hardy 2016</copyright>
+    <tags>appmetrics aspnetcore metrics</tags>
+    <repository type="git" url="git://github.com/AppMetrics/AppMetrics" commit="bf425b1eee561390c704a05c9ca281a97a139bda" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="App.Metrics.Abstractions" version="3.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Routing.Abstractions" version="2.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

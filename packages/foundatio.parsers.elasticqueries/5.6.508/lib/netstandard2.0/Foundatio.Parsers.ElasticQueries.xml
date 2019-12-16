@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Foundatio.Parsers.ElasticQueries</name>
+    </assembly>
+    <members>
+        <member name="M:Foundatio.Parsers.ElasticQueries.ElasticQueryParserConfiguration.RefreshMapping">
+            <summary>
+            Allows you to refresh server side mapping. This should be used only in unit tests.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Exceptionless.AspNetCore.Signed</id>
+    <version>4.3.2027</version>
+    <authors>Exceptionless</authors>
+    <owners>Exceptionless</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/exceptionless/Exceptionless.Net</projectUrl>
+    <iconUrl>https://be.exceptionless.io/img/exceptionless-32.png</iconUrl>
+    <description>Exceptionless client for ASP.NET Core. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.</description>
+    <releaseNotes>https://github.com/exceptionless/Exceptionless.Net/releases</releaseNotes>
+    <copyright>Copyright (c) 2019 Exceptionless. All rights reserved.</copyright>
+    <tags>ASP.NET Exceptionless Error Report Reporting Exception Logging Log ELMAH</tags>
+    <repository type="git" url="https://github.com/exceptionless/Exceptionless.Net" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Exceptionless.Signed" version="4.3.2027" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Hosting.Abstractions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http.Extensions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DiagnosticAdapter" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Net.Http.Headers" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.DiagnosticSource" version="4.4.1" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Http" version="4.3.3" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETCoreApp2.0">
+        <dependency id="Exceptionless.Signed" version="4.3.2027" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Hosting.Abstractions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Http.Extensions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DiagnosticAdapter" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Net.Http.Headers" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.DiagnosticSource" version="4.4.1" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Http" version="4.3.3" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

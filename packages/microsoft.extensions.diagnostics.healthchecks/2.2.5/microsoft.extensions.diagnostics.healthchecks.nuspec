@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Extensions.Diagnostics.HealthChecks</id>
+    <version>2.2.5</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://raw.githubusercontent.com/aspnet/AspNetCore/2.0.0/LICENSE.txt</licenseUrl>
+    <projectUrl>https://asp.net/</projectUrl>
+    <iconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</iconUrl>
+    <description>Components for performing health checks in .NET applications
+
+Commonly Used Types:
+Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService
+Microsoft.Extensions.Diagnostics.HealthChecks.IHealthChecksBuilder
+    
+
+This package was built from the source code at https://github.com/aspnet/Extensions/tree/0fca7b48d0d419df0c67de0df4792441f6d5038f</description>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>diagnostics healthchecks</tags>
+    <serviceable>true</serviceable>
+    <repository type="git" url="https://github.com/aspnet/Extensions" branch="internal/release/2.2" commit="0fca7b48d0d419df0c67de0df4792441f6d5038f" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Hosting.Abstractions" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options" version="2.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

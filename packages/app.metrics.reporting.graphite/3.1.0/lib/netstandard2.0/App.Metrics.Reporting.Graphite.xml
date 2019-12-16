@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>App.Metrics.Reporting.Graphite</name>
+    </assembly>
+    <members>
+        <member name="T:App.Metrics.MetricsGraphiteReporterBuilder">
+            <summary>
+                Builder for configuring metrics Grahpite reporting using an
+                <see cref="T:App.Metrics.Builder.IMetricsReportingBuilder" />.
+            </summary>
+        </member>
+        <member name="M:App.Metrics.MetricsGraphiteReporterBuilder.ToGraphite(App.Metrics.Builder.IMetricsReportingBuilder,App.Metrics.Reporting.Graphite.MetricsReportingGraphiteOptions)">
+            <summary>
+                Add the <see cref="T:App.Metrics.Reporting.Graphite.GraphiteReporter" /> allowing metrics to be reported to Graphite.
+            </summary>
+            <param name="metricsReportingBuilder">
+                The <see cref="T:App.Metrics.Builder.IMetricsReportingBuilder" /> used to configure metrics reporters.
+            </param>
+            <param name="options">The Graphite reporting options to use.</param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+        <member name="M:App.Metrics.MetricsGraphiteReporterBuilder.ToGraphite(App.Metrics.Builder.IMetricsReportingBuilder,System.Action{App.Metrics.Reporting.Graphite.MetricsReportingGraphiteOptions})">
+            <summary>
+                Add the <see cref="T:App.Metrics.Reporting.Graphite.GraphiteReporter" /> allowing metrics to be reported to Graphite.
+            </summary>
+            <param name="metricReporterProviderBuilder">
+                The <see cref="T:App.Metrics.Builder.IMetricsReportingBuilder" /> used to configure metrics reporters.
+            </param>
+            <param name="setupAction">The Graphite reporting options to use.</param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+        <member name="M:App.Metrics.MetricsGraphiteReporterBuilder.ToGraphite(App.Metrics.Builder.IMetricsReportingBuilder,System.String,System.Action{App.Metrics.MetricFields})">
+            <summary>
+                Add the <see cref="T:App.Metrics.Reporting.Graphite.GraphiteReporter" /> allowing metrics to be reported to Graphite.
+            </summary>
+            <param name="metricReporterProviderBuilder">
+                The <see cref="T:App.Metrics.Builder.IMetricsReportingBuilder" /> used to configure metrics reporters.
+            </param>
+            <param name="url">The base url where metrics are written.</param>
+            <param name="fieldsSetup">The metric fields to report as well as thier names.</param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+        <member name="M:App.Metrics.MetricsGraphiteReporterBuilder.ToGraphite(App.Metrics.Builder.IMetricsReportingBuilder,System.String,System.TimeSpan,System.Action{App.Metrics.MetricFields},System.Action{App.Metrics.Formatters.Graphite.MetricsGraphitePlainTextProtocolOptions})">
+            <summary>
+                Add the <see cref="T:App.Metrics.Reporting.Graphite.GraphiteReporter" /> allowing metrics to be reported to Graphite.
+            </summary>
+            <param name="metricReporterProviderBuilder">
+                The <see cref="T:App.Metrics.Builder.IMetricsReportingBuilder" /> used to configure metrics reporters.
+            </param>
+            <param name="url">The base url where metrics are written.</param>
+            <param name="flushInterval">
+                The <see cref="T:System.TimeSpan" /> interval used if intended to schedule metrics
+                reporting.
+            </param>
+            <param name="fieldsSetup">The metric fields to report as well as thier names.</param>
+            <param name="optionsSetup">The setup action to configure the <see cref="T:App.Metrics.Formatters.Graphite.MetricsGraphitePlainTextProtocolOptions"/> to use.</param>
+            <returns>
+                An <see cref="T:App.Metrics.IMetricsBuilder" /> that can be used to further configure App Metrics.
+            </returns>
+        </member>
+        <member name="M:App.Metrics.Reporting.Graphite.Client.DefaultGraphiteTcpClient.WriteAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:App.Metrics.Reporting.Graphite.Client.DefaultGraphiteUdpClient.WriteAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="F:App.Metrics.Reporting.Graphite.Client.Protocol.Tcp">
+            <summary>
+            Send data using TCP
+            </summary>
+        </member>
+        <member name="F:App.Metrics.Reporting.Graphite.Client.Protocol.Udp">
+            <summary>
+            Send data using UDP
+            </summary>
+        </member>
+        <member name="F:App.Metrics.Reporting.Graphite.Client.Protocol.Pickled">
+            <summary>
+            Send data using Pickled
+            </summary>
+        </member>
+        <member name="P:App.Metrics.Reporting.Graphite.GraphiteOptions.Protocol">
+            <summary>
+                Gets the number of Graphite notes that must confirm the write
+            </summary>
+            <value>
+                The Graphite node write consistency.
+            </value>
+            <exception cref="T:System.ArgumentException">
+                Graphite URI scheme must be either net.tcp or net.udp or net.pickled - BaseAddress
+            </exception>
+        </member>
+        <member name="P:App.Metrics.Reporting.Graphite.GraphiteReporter.Filter">
+            <inheritdoc />
+        </member>
+        <member name="P:App.Metrics.Reporting.Graphite.GraphiteReporter.FlushInterval">
+            <inheritdoc />
+        </member>
+        <member name="P:App.Metrics.Reporting.Graphite.GraphiteReporter.Formatter">
+            <inheritdoc />
+        </member>
+        <member name="M:App.Metrics.Reporting.Graphite.GraphiteReporter.FlushAsync(App.Metrics.MetricsDataValueSource,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="P:App.Metrics.Reporting.Graphite.MetricsReportingGraphiteOptions.Filter">
+            <summary>
+                Gets or sets the <see cref="T:App.Metrics.Filters.IFilterMetrics" /> to use for just this reporter.
+            </summary>
+            <value>
+                The <see cref="T:App.Metrics.Filters.IFilterMetrics" /> to use for this reporter.
+            </value>
+        </member>
+        <member name="P:App.Metrics.Reporting.Graphite.MetricsReportingGraphiteOptions.ClientPolicy">
+            <summary>
+                Gets or sets the HTTP policy settings which allows circuit breaker configuration to be adjusted
+            </summary>
+            <value>
+                The HTTP policy.
+            </value>
+        </member>
+        <member name="P:App.Metrics.Reporting.Graphite.MetricsReportingGraphiteOptions.Graphite">
+            <summary>
+                Gets or sets the available options for GraphiteOptions connectivity.
+            </summary>
+            <value>
+                The <see cref="T:App.Metrics.Reporting.Graphite.GraphiteOptions" />.
+            </value>
+        </member>
+        <member name="P:App.Metrics.Reporting.Graphite.MetricsReportingGraphiteOptions.MetricsOutputFormatter">
+            <summary>
+                Gets or sets the <see cref="T:App.Metrics.Formatters.IMetricsOutputFormatter" /> used to write metrics.
+            </summary>
+            <value>
+                The <see cref="T:App.Metrics.Formatters.IMetricsOutputFormatter" /> used to write metrics.
+            </value>
+        </member>
+        <member name="P:App.Metrics.Reporting.Graphite.MetricsReportingGraphiteOptions.FlushInterval">
+            <summary>
+                Gets or sets the flush metrics interval
+            </summary>
+            <remarks>
+                This <see cref="T:System.TimeSpan" /> will apply to all configured reporters unless overriden by a specific reporters
+                options.
+            </remarks>
+            <value>
+                The <see cref="T:System.TimeSpan" /> to wait between reporting metrics
+            </value>
+        </member>
+    </members>
+</doc>

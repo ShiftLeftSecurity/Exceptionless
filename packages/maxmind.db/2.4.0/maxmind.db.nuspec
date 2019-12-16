@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>MaxMind.Db</id>
+    <version>2.4.0</version>
+    <authors>MaxMind.Db</authors>
+    <owners>MaxMind.Db</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/maxmind/MaxMind-DB-Reader-dotnet/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/maxmind/MaxMind-DB-Reader-dotnet</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/maxmind/GeoIP2-dotnet/master/MaxMind-logo.png</iconUrl>
+    <description>.NET reader for the MaxMind DB file format</description>
+    <tags>maxmind ip geoip geoip2 geolocation ipv4 ipv6 mmdb maxminddb</tags>
+    <repository type="git" url="https://github.com/maxmind/MaxMind-DB-Reader-dotnet" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETStandard1.4">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.IO.MemoryMappedFiles" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.TypeExtensions" version="4.4.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

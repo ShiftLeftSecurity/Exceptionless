@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Exceptionless.Signed</id>
+    <version>4.1.1972</version>
+    <authors>Exceptionless</authors>
+    <owners>Exceptionless</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/exceptionless/Exceptionless.Net</projectUrl>
+    <iconUrl>https://be.exceptionless.io/img/exceptionless-32.png</iconUrl>
+    <description>Exceptionless client for portable applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.</description>
+    <releaseNotes>https://github.com/exceptionless/Exceptionless.Net/releases</releaseNotes>
+    <copyright>Copyright (c) 2017 Exceptionless. All rights reserved.</copyright>
+    <tags>Exceptionless Error Report Reporting Exception Logging Log ELMAH pcl NETSTANDARD Core</tags>
+    <repository type="git" url="https://github.com/exceptionless/Exceptionless.Net" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETStandard1.2">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.ComponentModel.TypeConverter" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.Common" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Dynamic.Runtime" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.ILGeneration" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Xml.XmlSerializer" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.PlatformAbstractions" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="System.AppDomain" version="2.0.11" exclude="Build,Analyzers" />
+        <dependency id="System.ComponentModel.TypeConverter" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.Common" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.Process" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.StackTrace" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.TraceSource" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Dynamic.Runtime" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.NameResolution" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.ILGeneration" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Threading.Thread" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Xml.XmlDocument" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Xml.XmlSerializer" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.4">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.PlatformAbstractions" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="System.AppDomain" version="2.0.11" exclude="Build,Analyzers" />
+        <dependency id="System.ComponentModel.TypeConverter" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.Common" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.Process" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.StackTrace" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.TraceSource" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Dynamic.Runtime" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.NameResolution" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.ILGeneration" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Threading.Thread" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Xml.XmlDocument" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Xml.XmlSerializer" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.5">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.PlatformAbstractions" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="System.AppDomain" version="2.0.11" exclude="Build,Analyzers" />
+        <dependency id="System.ComponentModel.TypeConverter" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.Common" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.Process" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.StackTrace" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Diagnostics.TraceSource" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Dynamic.Runtime" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Net.NameResolution" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.ILGeneration" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Threading.Thread" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Xml.XmlDocument" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="System.Xml.XmlSerializer" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETPortable4.6-Profile151" />
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.Extensions.PlatformAbstractions" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.5, .NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="Microsoft.VisualBasic" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5, .NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.5, .NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Net.Http.WebRequest" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Numerics" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.Runtime.Serialization" targetFramework=".NETFramework4.5, .NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.5, .NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework4.5, .NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Collections" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Diagnostics.Debug" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Dynamic.Runtime" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Globalization" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.IO.Compression" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.IO" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Linq" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Linq.Expressions" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Net.Primitives" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.ObjectModel" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Reflection" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Reflection.Extensions" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Reflection.Primitives" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Resources.ResourceManager" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Runtime" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Runtime.Extensions" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Runtime.Serialization.Primitives" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Text.Encoding" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Text.Encoding.Extensions" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Text.RegularExpressions" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Threading" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Threading.Tasks" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Threading.Timer" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Xml.ReaderWriter" targetFramework=".NETPortable4.6-Profile151" />
+      <frameworkAssembly assemblyName="System.Xml.XDocument" targetFramework=".NETPortable4.6-Profile151" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

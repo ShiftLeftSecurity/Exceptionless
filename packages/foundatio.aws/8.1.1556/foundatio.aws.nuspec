@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Foundatio.AWS</id>
+    <version>8.1.1556</version>
+    <authors>FoundatioFx</authors>
+    <owners>FoundatioFx</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <projectUrl>https://github.com/FoundatioFx/Foundatio.Redis</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/FoundatioFx/Foundatio/master/media/foundatio-icon.png</iconUrl>
+    <description>Pluggable foundation blocks for building distributed apps.</description>
+    <releaseNotes>https://github.com/FoundatioFx/Foundatio.Redis/releases</releaseNotes>
+    <copyright>Copyright (c) 2019 Foundatio.  All rights reserved.</copyright>
+    <tags>Queue Messaging Message Bus ServiceBus Locking Lock Distributed File Storage Blob Jobs Metrics Stats Azure Redis StatsD Amazon AWS S3 broker Logging Log</tags>
+    <repository type="git" url="https://github.com/FoundatioFx/Foundatio.Redis" commit="eb4205eb5b1871990566352cfe3fb9ef5b06bd98" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="AWSSDK.CloudWatch" version="3.3.102.22" exclude="Build,Analyzers" />
+        <dependency id="AWSSDK.S3" version="3.3.104.19" exclude="Build,Analyzers" />
+        <dependency id="AWSSDK.SQS" version="3.3.101.2" exclude="Build,Analyzers" />
+        <dependency id="Foundatio" version="8.1.2126" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
